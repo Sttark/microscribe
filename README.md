@@ -42,3 +42,19 @@ The script uses the following USB parameters to communicate with the device:
 - Product ID: 0x0053
 
 Joint angles are calculated using encoder values relative to predefined home positions with specific resolutions for each axis.
+
+## Future Work
+
+### Forward Kinematics Implementation
+- Implement calculations to solve for X, Y, and Z coordinates using kinematic dimensions
+- Convert joint angles to end-effector position in 3D space
+- Validate position calculations against known reference points
+
+### OnShape Integration
+- Develop USB signal detection for the handheld remote button press
+- Use button press signal as trigger for automatic point capture
+- Implement automatic keystroke generation to input points into OnShape's MicroScribe 3D Points FeatureScript
+- Create seamless workflow between physical measurements and CAD model
+- Add configurable keystroke mappings for different OnShape operations
+- Include error checking and validation for point data transfer
+- Provide feedback mechanism to confirm successful point capture and transfer
